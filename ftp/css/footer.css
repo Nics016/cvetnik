@@ -1,0 +1,13 @@
+#main-footer{
+	display: block;
+	width: 100%;
+	height: 120px;
+	background: url(../img/footer/footer-bg.png) repeat;
+	background-size: contain;
+	font-size: 14px;
+	color:#fff;
+}
+
+#main-footer a {
+	color:#a3c655;
+}

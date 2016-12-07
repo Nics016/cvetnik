@@ -1,0 +1,42 @@
+/* Общие */
+/* Заголовки */
+@font-face{
+	src: url('../fonts/PTSansNarrowBold.ttf');
+	font-family: 'NarrowSansBold';
+}
+
+/* Тексты */
+@font-face{
+	src: url('../fonts/PTSansNarrowRegular.ttf');
+	font-family: 'NarrowSansRegular';
+}
+
+body{
+	margin: 0;
+	background-color: #fff;
+}
+
+#main-wrap{
+	font-family: NarrowSansRegular;
+	width: 100%;
+	background-image: url(../img/main_bg.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	
+	/* Create the parallax scrolling effect */
+	background-attachment: fixed;
+	background-position: center;
+}
+
+.container{
+	display: block;
+	width: 1170px;
+	margin: 0 auto;
+    overflow: hidden;
+}
+
+.clearfix:after{
+	content: '';
+	display: table;
+	clear: both;
+}

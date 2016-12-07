@@ -1,0 +1,62 @@
+body{
+	margin: 0;
+	background-image: url(bg_main.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#main-wrap{
+	width: 100%;
+  min-width:720px;
+}
+
+.container{
+	display: block;
+	width: 720px;
+	margin: 0 auto;
+  	overflow: hidden;
+}
+
+.clearfix:after{
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.display{
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	margin-top: 100px;
+	padding: 20px;
+	border: 2px solid darkgreen;
+	background-color: rgba(255, 255, 255, 0.5);
+	border-radius: 10px;
+}
+
+.after{
+	display: block;
+	font-size: 34px;
+	text-align: center;
+	margin-top: 20px;
+	font-weight: bold;
+	color: #000;
+}
+
+#timer{
+	display: block;
+	margin-top: 20px;
+	font-size: 34px;
+	color: red;
+	font-weight: bold;
+	text-align: center;
+}
+
+.wewillbetogether{
+	display: block;
+	margin-top: 10px;
+	color: #000;
+	font-size: 30px;
+	text-align: center;
+	font-style: italic;
+}
