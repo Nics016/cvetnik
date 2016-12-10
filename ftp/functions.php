@@ -17,11 +17,17 @@ function _s_styles()
 	wp_enqueue_style('footer', get_template_directory_uri(). '/css/footer.css');
 
 	// Главная
-	if ( is_page("main") )
-	{
+	if ( is_page("main") ) {
 		wp_register_style('main', get_template_directory_uri(). '/css/main.css');
 		wp_enqueue_style('main', get_template_directory_uri(). '/css/main.css');
+		// Карусель
+		wp_register_style('materialize', get_template_directory_uri(). '/css/materialize.css');
+		wp_enqueue_style('materialize', get_template_directory_uri(). '/css/materialize.css');
 	}
+
+	// Page
+	wp_register_style('article', get_template_directory_uri(). '/css/article.css');
+	wp_enqueue_style('article', get_template_directory_uri(). '/css/article.css');
 }
 add_action('wp_enqueue_scripts', '_s_styles');
 
@@ -33,6 +39,12 @@ function _s_scripts()
 	wp_deregister_script('jquery');
 	wp_register_script('jquery',  get_template_directory_uri(). '/js/jquery.js');
 	wp_enqueue_script('jquery');
+
+	// Карусель на главной
+	if ( is_page("main") ) {
+		wp_register_script('materialize_script',  get_template_directory_uri(). '/js/materialize.min.js');
+	wp_enqueue_script('materialize_script');
+	}
 }
 
 add_action('wp_enqueue_scripts', '_s_scripts');

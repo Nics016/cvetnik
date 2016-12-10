@@ -4,7 +4,7 @@ main{
 
 .opportunities{ 
 	display: block;
-	margin-top: -40px;
+	margin-top: 20px;
 	padding: 0 80px;
 }
 
@@ -49,12 +49,34 @@ main{
 	text-align: justify;
 }
 
+.opportunities-element-link:hover{
+	background-color: #60bdff;
+	color: #fff;
+}
+
+.opportunities-element-link{
+	display: block;
+	margin: 10px auto;
+	letter-spacing: 1px;
+	width: 200px;
+	color: #000;
+	font-size: 20px;
+	background-color: #60bddb;
+	text-decoration: none;
+	padding: 13px 0;
+	border-radius: 30px;
+	font-family: NarrowSansBold;
+	transition: all .2s ease-in;
+	text-align: center;
+}
+
 .business{
 	display: block;
+	margin-top: 50px;
 	color: #3e515a;
 }
 
-.business .container{
+.business .container1{
 	background-color: rgba(255, 255, 255, 0.6);
 	width: 1140px;
 	padding: 30px;
@@ -117,7 +139,7 @@ main{
 	display: block;
 }
 
-.joinnow .container{
+.joinnow .container1{
 	display: block;
 	height: 100px;
 	margin: 50px auto;
@@ -142,7 +164,7 @@ main{
 }
 
 .joinnow-link:hover{
-	background-color: blue;
+	background-color: #60bdff;
 	color: #fff;
 }
 

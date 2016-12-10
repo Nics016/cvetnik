@@ -47,7 +47,7 @@
 	width: 420px;
 }
 
-h1 {
+h1#title {
 	font-family: NarrowSansBold;
 	font-size:32px;
 	line-height:1.2em;
@@ -71,7 +71,7 @@ h1 strong {
 	padding: 10px;
 	margin-top: 70px;
 	background-color: green;
-	width: 220px;
+	width: 240px;
 	border-radius: 10px;
 	border: 1px solid darkgreen;
 }
@@ -80,7 +80,7 @@ h1 strong {
 	display: block;
 	padding: 0;
 	margin: 0;	
-	width: 220px;
+	width: 100%;
 }
 
 #top-menu li{
@@ -99,11 +99,11 @@ h1 strong {
 	background-size: cover;
 	border-radius: 5px;
 	border: 1px solid #000;
-	font-family: NarrowSansRegular;
+	font-family: NarrowSansBold;
 	font-size: 20px;
 	color: #fff;
 	text-decoration: none;
 	padding-top: 10px;
 	padding-bottom: 8px;
-	padding-left: 70px;
+	text-align: center;
 }
