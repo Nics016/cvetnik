@@ -1,6 +1,9 @@
 #main-header{
-	height:400px;
+	height: 260px;
 	background:url(../img/header/header-bg.png) no-repeat 50% 0;
+	-moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	-webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	box-shadow: 3px 4px 5px rgba(54,123,31,.5);
 }
 
 .logo-box {
@@ -9,18 +12,17 @@
 	margin-left:140px;
 	margin-top:30px;
 	text-align:center;
-	width:344px;
+	width:400px;
 	color:#fff;
 }
 .logo-box p {
 	margin-bottom:24px;
 }
 .logo-box h2 {
-	font-size:20px;
-	font-family: NarrowSansBold;
+	font-size:28px;
+	font-family: NarrowSansRegular;
 	line-height:1.2em;
 	color:#fff;
-	text-transform:uppercase;
 	margin-bottom:22px;
 }
 
@@ -42,14 +44,14 @@
 .alarm-clocks {
 	display:block;
 	float: right;
-	margin-left: -20px;
+	margin-right: 50px;
 	margin-top:10px;
-	width: 420px;
+	width: 300px;
 }
 
 h1#title {
 	font-family: NarrowSansBold;
-	font-size:32px;
+	font-size:36px;
 	line-height:1.2em;
 	color:#fff;
 	text-transform:uppercase;

@@ -25,9 +25,21 @@ function _s_styles()
 		wp_enqueue_style('materialize', get_template_directory_uri(). '/css/materialize.css');
 	}
 
+	// Category
+	wp_register_style('category_css', get_template_directory_uri(). '/css/category.css');
+	wp_enqueue_style('category_css', get_template_directory_uri(). '/css/category.css');
+
 	// Page
 	wp_register_style('article', get_template_directory_uri(). '/css/article.css');
 	wp_enqueue_style('article', get_template_directory_uri(). '/css/article.css');
+
+	// Single
+	wp_register_style('single_css', get_template_directory_uri(). '/css/single.css');
+	wp_enqueue_style('single_css', get_template_directory_uri(). '/css/single.css');
+
+	// Comments
+	wp_register_style('comments_css', get_template_directory_uri(). '/css/comments.css');
+	wp_enqueue_style('comments_css', get_template_directory_uri(). '/css/comments.css');
 }
 add_action('wp_enqueue_scripts', '_s_styles');
 
@@ -72,4 +84,20 @@ add_theme_support( 'post-thumbnails' );
 
 // Добавляем страничку настроек темы
 require_once("options_page.php");
+
+// --- CUSTOM FUNCTIONS ---
+function get_short_content($the_content, $wordsNum){
+	$content = $the_content;
+    $content = strip_shortcodes($content);
+    $content = str_replace(']]>', ']]&gt;', $content);
+    $content = strip_tags($content);
+    $excerpt_length = $wordsNum;
+    $words = explode(' ', $content, $excerpt_length + 1);
+    if(count($words) > $excerpt_length){
+        array_pop($words);
+    }
+    $content = implode(' ', $words);
+    $content .= " ...";
+    return $content;
+}
 ?>

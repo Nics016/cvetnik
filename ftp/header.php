@@ -35,9 +35,8 @@
 				</div>
 				<div class="logo-box">
 			      <h1 id="title"><a href="<?= site_url() ?>"><strong><?= $blog_title ?></strong></a></h1>
-			      <h2></h2>
-			      <?= $blog_description ?>
-			      <br><br>
+			      <h2><?= $blog_description ?></h2>
+			      <br>
 			      <a href="<?= $blog_button_link ?>" class="button"><?= $blog_button_text ?></a> 
 			    </div>
 			    <img src="http://cvetnik.beget.tech/wp-content/themes/CvetnikTheme/img/bt/big-model.png" alt="" class="alarm-clocks"/> 

@@ -4,8 +4,7 @@ main{
 
 .opportunities{ 
 	display: block;
-	margin-top: 20px;
-	padding: 0 80px;
+	margin-top: 50px;
 }
 
 .opportunities-element:first-child{

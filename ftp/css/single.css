@@ -1,0 +1,51 @@
+.single-article{
+	display: block;
+	margin-top: 30px;
+}
+
+.single-article .container1{
+	background-color: rgba(255, 255, 255, 0.6);
+	width: 1080px;
+	padding: 30px;
+	border-radius: 10px;
+}
+
+.single-article-wrapper{
+	width: calc(100% - 40px);
+	padding: 20px;
+}
+
+.single-article-title{
+	display: block;
+	margin: 30px auto;
+	margin-top: 0;
+	text-align: center;
+	font-family: NarrowSansRegular;
+	font-size: 26px;
+	font-weight: bold;
+	color: #000;
+}
+
+.single-article-textbox{
+	display: block;
+	width: 100%;
+	overflow: hidden;
+	font-family: NarrowSansRegular;
+	font-size: 24px;
+	color: #585858;
+	text-align: justify;
+	text-indent: 20px;
+}
+
+.single-article-pic{
+	display: block;
+	float: left;
+	width: 400px;
+	height: 300px;
+	border-radius: 5px;
+}
+
+.single-article-textbox img{
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
